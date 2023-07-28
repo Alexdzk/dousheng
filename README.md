@@ -1,7 +1,7 @@
 # dousheng
 ### 1.更改配置
 
-更改 constants/constant.go 中的地址配置
+更改 pkg/constants/constant.go 中的地址配置
 
 ### 2.建立基础依赖
 
