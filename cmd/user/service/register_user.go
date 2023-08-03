@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/chenmengangzhi29/douyin/dal/db"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/user"
-	"github.com/chenmengangzhi29/douyin/pkg/errno"
+	"github.com/Alexdzk/dousheng/dal/db"
+	"github.com/Alexdzk/dousheng/kitex_gen/user"
+	"github.com/Alexdzk/dousheng/pkg/errno"
 )
 
 type RegisterUserService struct {

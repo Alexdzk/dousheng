@@ -1,9 +1,9 @@
 package pack
 
 import (
-	"github.com/chenmengangzhi29/douyin/kitex_gen/user"
+	"github.com/Alexdzk/dousheng/kitex_gen/user"
 
-	"github.com/chenmengangzhi29/douyin/dal/db"
+	"github.com/Alexdzk/dousheng/dal/db"
 )
 
 func UserInfo(userRaw *db.UserRaw, isFollow bool) *user.User {

@@ -1,10 +1,10 @@
 package dal
 
 import (
-	"github.com/chenmengangzhi29/douyin/dal/db"
+	"github.com/Alexdzk/dousheng/dal/db"
 )
 
-//Init init dal
+// Init init dal
 func Init() {
 	db.Init() //mysql
 }

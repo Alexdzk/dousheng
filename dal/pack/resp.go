@@ -4,13 +4,13 @@ import (
 	"errors"
 	"time"
 
-	"github.com/chenmengangzhi29/douyin/kitex_gen/comment"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/favorite"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/feed"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/publish"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/relation"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/user"
-	"github.com/chenmengangzhi29/douyin/pkg/errno"
+	"github.com/Alexdzk/dousheng/kitex_gen/comment"
+	"github.com/Alexdzk/dousheng/kitex_gen/favorite"
+	"github.com/Alexdzk/dousheng/kitex_gen/feed"
+	"github.com/Alexdzk/dousheng/kitex_gen/publish"
+	"github.com/Alexdzk/dousheng/kitex_gen/relation"
+	"github.com/Alexdzk/dousheng/kitex_gen/user"
+	"github.com/Alexdzk/dousheng/pkg/errno"
 )
 
 // BuildFeedBaseResp build feed baseResp from error
@@ -32,7 +32,7 @@ func feedbaseResp(err errno.ErrNo) *feed.BaseResp {
 	return &feed.BaseResp{StatusCode: err.ErrCode, StatusMessage: err.ErrMsg, ServiceTime: time.Now().Unix()}
 }
 
-//BuildPublishBaseResp build publish baseResp from error
+// BuildPublishBaseResp build publish baseResp from error
 func BuildPublishBaseResp(err error) *publish.BaseResp {
 	if err == nil {
 		return publishbaseResp(errno.Success)
@@ -51,7 +51,7 @@ func publishbaseResp(err errno.ErrNo) *publish.BaseResp {
 	return &publish.BaseResp{StatusCode: err.ErrCode, StatusMessage: err.ErrMsg, ServiceTime: time.Now().Unix()}
 }
 
-//BuildUserBaseResp build user baseResp from error
+// BuildUserBaseResp build user baseResp from error
 func BuildUserBaseResp(err error) *user.BaseResp {
 	if err == nil {
 		return userbaseResp(errno.Success)
@@ -70,7 +70,7 @@ func userbaseResp(err errno.ErrNo) *user.BaseResp {
 	return &user.BaseResp{StatusCode: err.ErrCode, StatusMessage: err.ErrMsg, ServiceTime: time.Now().Unix()}
 }
 
-//BuildFavoriteBaseResp build favorite baseResp from error
+// BuildFavoriteBaseResp build favorite baseResp from error
 func BuildFavoriteBaseResp(err error) *favorite.BaseResp {
 	if err == nil {
 		return favoritebaseResp(errno.Success)
@@ -89,7 +89,7 @@ func favoritebaseResp(err errno.ErrNo) *favorite.BaseResp {
 	return &favorite.BaseResp{StatusCode: err.ErrCode, StatusMessage: err.ErrMsg, ServiceTime: time.Now().Unix()}
 }
 
-//BuildCommentBaseResp build comment baseResp from error
+// BuildCommentBaseResp build comment baseResp from error
 func BuilCommentBaseResp(err error) *comment.BaseResp {
 	if err == nil {
 		return commentbaseResp(errno.Success)
@@ -108,7 +108,7 @@ func commentbaseResp(err errno.ErrNo) *comment.BaseResp {
 	return &comment.BaseResp{StatusCode: err.ErrCode, StatusMessage: err.ErrMsg, ServiceTime: time.Now().Unix()}
 }
 
-//BuildRelationBaseResp build relation baseResp from error
+// BuildRelationBaseResp build relation baseResp from error
 func BuilRelationBaseResp(err error) *relation.BaseResp {
 	if err == nil {
 		return relationbaseResp(errno.Success)

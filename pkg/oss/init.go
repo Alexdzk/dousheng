@@ -4,8 +4,8 @@ import (
 	"os"
 	"strings"
 
+	"github.com/Alexdzk/dousheng/pkg/constants"
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
-	"github.com/chenmengangzhi29/douyin/pkg/constants"
 )
 
 var Bucket *oss.Bucket

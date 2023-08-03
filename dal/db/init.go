@@ -1,7 +1,7 @@
 package db
 
 import (
-	"github.com/chenmengangzhi29/douyin/pkg/constants"
+	"github.com/Alexdzk/dousheng/pkg/constants"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	gormopentracing "gorm.io/plugin/opentracing"
@@ -9,7 +9,7 @@ import (
 
 var DB *gorm.DB
 
-//Init init DB
+// Init init DB
 func Init() {
 	var err error
 	DB, err = gorm.Open(mysql.Open(constants.MySQLDefaultDSN),

@@ -2,7 +2,7 @@
 package feedservice
 
 import (
-	"github.com/chenmengangzhi29/douyin/kitex_gen/feed"
+	"github.com/Alexdzk/dousheng/kitex_gen/feed"
 	"github.com/cloudwego/kitex/server"
 )
 

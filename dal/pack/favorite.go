@@ -1,8 +1,8 @@
 package pack
 
 import (
-	"github.com/chenmengangzhi29/douyin/dal/db"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/favorite"
+	"github.com/Alexdzk/dousheng/dal/db"
+	"github.com/Alexdzk/dousheng/kitex_gen/favorite"
 )
 
 // VideoList pack video list info

@@ -4,7 +4,7 @@ package favoriteservice
 
 import (
 	"context"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/favorite"
+	"github.com/Alexdzk/dousheng/kitex_gen/favorite"
 	"github.com/cloudwego/kitex/client"
 	"github.com/cloudwego/kitex/client/callopt"
 )

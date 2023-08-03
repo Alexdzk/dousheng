@@ -4,10 +4,10 @@ import (
 	"context"
 	"errors"
 
-	"github.com/chenmengangzhi29/douyin/dal/db"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/favorite"
-	"github.com/chenmengangzhi29/douyin/pkg/constants"
-	"github.com/chenmengangzhi29/douyin/pkg/jwt"
+	"github.com/Alexdzk/dousheng/dal/db"
+	"github.com/Alexdzk/dousheng/kitex_gen/favorite"
+	"github.com/Alexdzk/dousheng/pkg/constants"
+	"github.com/Alexdzk/dousheng/pkg/jwt"
 )
 
 type FavoriteActionService struct {

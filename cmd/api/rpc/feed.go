@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/chenmengangzhi29/douyin/kitex_gen/feed"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/feed/feedservice"
-	"github.com/chenmengangzhi29/douyin/pkg/constants"
-	"github.com/chenmengangzhi29/douyin/pkg/errno"
-	"github.com/chenmengangzhi29/douyin/pkg/middleware"
+	"github.com/Alexdzk/dousheng/kitex_gen/feed"
+	"github.com/Alexdzk/dousheng/kitex_gen/feed/feedservice"
+	"github.com/Alexdzk/dousheng/pkg/constants"
+	"github.com/Alexdzk/dousheng/pkg/errno"
+	"github.com/Alexdzk/dousheng/pkg/middleware"
 	"github.com/cloudwego/kitex/client"
 	"github.com/cloudwego/kitex/pkg/retry"
 	etcd "github.com/kitex-contrib/registry-etcd"
@@ -40,7 +40,7 @@ func initFeedRpc() {
 	feedClient = c
 }
 
-//Feed query list of video info
+// Feed query list of video info
 func Feed(ctx context.Context, req *feed.FeedRequest) ([]*feed.Video, int64, error) {
 	resp, err := feedClient.Feed(ctx, req)
 	if err != nil {
