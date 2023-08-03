@@ -1,4 +1,4 @@
-module github.com/chenmengangzhi29/douyin
+module github.com/Alexdzk/dousheng
 
 go 1.18
 

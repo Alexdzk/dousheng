@@ -5,7 +5,7 @@ package feedservice
 import (
 	"context"
 	"fmt"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/feed"
+	"github.com/Alexdzk/dousheng/kitex_gen/feed"
 	"github.com/cloudwego/kitex/client"
 	kitex "github.com/cloudwego/kitex/pkg/serviceinfo"
 	"github.com/cloudwego/kitex/pkg/streaming"

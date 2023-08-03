@@ -3,7 +3,7 @@
 package commentservice
 
 import (
-	"github.com/chenmengangzhi29/douyin/kitex_gen/comment"
+	"github.com/Alexdzk/dousheng/kitex_gen/comment"
 	"github.com/cloudwego/kitex/server"
 )
 

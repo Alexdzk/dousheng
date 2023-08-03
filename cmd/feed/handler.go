@@ -3,10 +3,10 @@ package main
 import (
 	"context"
 
-	"github.com/chenmengangzhi29/douyin/cmd/feed/service"
-	"github.com/chenmengangzhi29/douyin/dal/pack"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/feed"
-	"github.com/chenmengangzhi29/douyin/pkg/errno"
+	"github.com/Alexdzk/dousheng/cmd/feed/service"
+	"github.com/Alexdzk/dousheng/dal/pack"
+	"github.com/Alexdzk/dousheng/kitex_gen/feed"
+	"github.com/Alexdzk/dousheng/pkg/errno"
 )
 
 // FeedServiceImpl implements the last service interface defined in the IDL.

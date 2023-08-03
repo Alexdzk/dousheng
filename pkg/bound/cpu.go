@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/chenmengangzhi29/douyin/pkg/constants"
-	"github.com/chenmengangzhi29/douyin/pkg/errno"
+	"github.com/Alexdzk/dousheng/pkg/constants"
+	"github.com/Alexdzk/dousheng/pkg/errno"
 	"github.com/cloudwego/kitex/pkg/klog"
 	"github.com/cloudwego/kitex/pkg/remote"
 	"github.com/shirou/gopsutil/cpu"
@@ -35,7 +35,7 @@ func (c *cpuLimitHandler) OnRead(ctx context.Context, conn net.Conn) (context.Co
 	return ctx, nil
 }
 
-//OnInactive implements the remote.InboundHandler interface.
+// OnInactive implements the remote.InboundHandler interface.
 func (c *cpuLimitHandler) OnInactive(ctx context.Context, conn net.Conn) context.Context {
 	return ctx
 }

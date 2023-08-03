@@ -4,7 +4,7 @@ package publishservice
 
 import (
 	"context"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/publish"
+	"github.com/Alexdzk/dousheng/kitex_gen/publish"
 	"github.com/cloudwego/kitex/client"
 	"github.com/cloudwego/kitex/client/callopt"
 )

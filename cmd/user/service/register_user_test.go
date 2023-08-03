@@ -7,11 +7,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/chenmengangzhi29/douyin/dal/db"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/user"
-	"github.com/chenmengangzhi29/douyin/pkg/constants"
-	"github.com/chenmengangzhi29/douyin/pkg/jwt"
-	"github.com/chenmengangzhi29/douyin/pkg/oss"
+	"github.com/Alexdzk/dousheng/dal/db"
+	"github.com/Alexdzk/dousheng/kitex_gen/user"
+	"github.com/Alexdzk/dousheng/pkg/constants"
+	"github.com/Alexdzk/dousheng/pkg/jwt"
+	"github.com/Alexdzk/dousheng/pkg/oss"
 	"github.com/cloudwego/kitex/pkg/klog"
 )
 
@@ -50,7 +50,7 @@ func TestMain(m *testing.M) {
 	m.Run()
 }
 
-//测试用户注册
+// 测试用户注册
 func TestRegisterUser(t *testing.T) {
 	type args struct {
 		username string
