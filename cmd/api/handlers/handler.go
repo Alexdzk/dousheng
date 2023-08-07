@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/chenmengangzhi29/douyin/pkg/errno"
+	"github.com/Alexdzk/dousheng/pkg/errno"
 	"github.com/gin-gonic/gin"
 )
 

@@ -3,8 +3,8 @@ package pack
 import (
 	"time"
 
-	"github.com/chenmengangzhi29/douyin/dal/db"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/feed"
+	"github.com/Alexdzk/dousheng/dal/db"
+	"github.com/Alexdzk/dousheng/kitex_gen/feed"
 )
 
 // VideoInfo pack video list info

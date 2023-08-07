@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/chenmengangzhi29/douyin/kitex_gen/user"
+	"github.com/Alexdzk/dousheng/kitex_gen/user"
 	"github.com/cloudwego/kitex/pkg/klog"
 )
 
-//测试用户信息
+// 测试用户信息
 func TestUserInfo(t *testing.T) {
 	type args struct {
 		userId int64

@@ -1,8 +1,8 @@
 package pack
 
 import (
-	"github.com/chenmengangzhi29/douyin/dal/db"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/relation"
+	"github.com/Alexdzk/dousheng/dal/db"
+	"github.com/Alexdzk/dousheng/kitex_gen/relation"
 )
 
 func UserList(currentId int64, users []*db.UserRaw, relationMap map[int64]*db.RelationRaw) []*relation.User {

@@ -2,7 +2,7 @@
 package publishservice
 
 import (
-	"github.com/chenmengangzhi29/douyin/kitex_gen/publish"
+	"github.com/Alexdzk/dousheng/kitex_gen/publish"
 	"github.com/cloudwego/kitex/server"
 )
 

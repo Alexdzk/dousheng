@@ -5,7 +5,7 @@ package favoriteservice
 import (
 	"context"
 	"fmt"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/favorite"
+	"github.com/Alexdzk/dousheng/kitex_gen/favorite"
 	"github.com/cloudwego/kitex/client"
 	kitex "github.com/cloudwego/kitex/pkg/serviceinfo"
 	"github.com/cloudwego/kitex/pkg/streaming"

@@ -1,8 +1,8 @@
 package pack
 
 import (
-	"github.com/chenmengangzhi29/douyin/dal/db"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/publish"
+	"github.com/Alexdzk/dousheng/dal/db"
+	"github.com/Alexdzk/dousheng/kitex_gen/publish"
 )
 
 // VideoInfo pack video list info

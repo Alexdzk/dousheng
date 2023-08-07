@@ -4,10 +4,10 @@ import (
 	"context"
 	"unicode/utf8"
 
-	"github.com/chenmengangzhi29/douyin/cmd/comment/service"
-	"github.com/chenmengangzhi29/douyin/dal/pack"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/comment"
-	"github.com/chenmengangzhi29/douyin/pkg/errno"
+	"github.com/Alexdzk/dousheng/cmd/comment/service"
+	"github.com/Alexdzk/dousheng/dal/pack"
+	"github.com/Alexdzk/dousheng/kitex_gen/comment"
+	"github.com/Alexdzk/dousheng/pkg/errno"
 )
 
 // CommentServiceImpl implements the last service interface defined in the IDL.

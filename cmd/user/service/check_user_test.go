@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/chenmengangzhi29/douyin/kitex_gen/user"
+	"github.com/Alexdzk/dousheng/kitex_gen/user"
 	"github.com/cloudwego/kitex/pkg/klog"
 )
 

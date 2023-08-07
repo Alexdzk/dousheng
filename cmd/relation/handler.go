@@ -3,10 +3,10 @@ package main
 import (
 	"context"
 
-	"github.com/chenmengangzhi29/douyin/cmd/relation/service"
-	"github.com/chenmengangzhi29/douyin/dal/pack"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/relation"
-	"github.com/chenmengangzhi29/douyin/pkg/errno"
+	"github.com/Alexdzk/dousheng/cmd/relation/service"
+	"github.com/Alexdzk/dousheng/dal/pack"
+	"github.com/Alexdzk/dousheng/kitex_gen/relation"
+	"github.com/Alexdzk/dousheng/pkg/errno"
 )
 
 // RelationServiceImpl implements the last service interface defined in the IDL.

@@ -3,11 +3,11 @@ package main
 import (
 	"context"
 
-	"github.com/chenmengangzhi29/douyin/cmd/user/service"
-	"github.com/chenmengangzhi29/douyin/dal/pack"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/user"
-	"github.com/chenmengangzhi29/douyin/pkg/errno"
-	"github.com/chenmengangzhi29/douyin/pkg/jwt"
+	"github.com/Alexdzk/dousheng/cmd/user/service"
+	"github.com/Alexdzk/dousheng/dal/pack"
+	"github.com/Alexdzk/dousheng/kitex_gen/user"
+	"github.com/Alexdzk/dousheng/pkg/errno"
+	"github.com/Alexdzk/dousheng/pkg/jwt"
 )
 
 // UserServiceImpl implements the last service interface defined in the IDL.

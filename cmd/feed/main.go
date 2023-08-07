@@ -3,12 +3,12 @@ package main
 import (
 	"net"
 
-	"github.com/chenmengangzhi29/douyin/dal"
-	feed "github.com/chenmengangzhi29/douyin/kitex_gen/feed/feedservice"
-	"github.com/chenmengangzhi29/douyin/pkg/bound"
-	"github.com/chenmengangzhi29/douyin/pkg/constants"
-	"github.com/chenmengangzhi29/douyin/pkg/middleware"
-	tracer2 "github.com/chenmengangzhi29/douyin/pkg/tracer"
+	"github.com/Alexdzk/dousheng/dal"
+	feed "github.com/Alexdzk/dousheng/kitex_gen/feed/feedservice"
+	"github.com/Alexdzk/dousheng/pkg/bound"
+	"github.com/Alexdzk/dousheng/pkg/constants"
+	"github.com/Alexdzk/dousheng/pkg/middleware"
+	tracer2 "github.com/Alexdzk/dousheng/pkg/tracer"
 	"github.com/cloudwego/kitex/pkg/klog"
 	"github.com/cloudwego/kitex/pkg/limit"
 	"github.com/cloudwego/kitex/pkg/rpcinfo"

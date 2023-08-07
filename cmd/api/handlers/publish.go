@@ -6,9 +6,9 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/chenmengangzhi29/douyin/cmd/api/rpc"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/publish"
-	"github.com/chenmengangzhi29/douyin/pkg/errno"
+	"github.com/Alexdzk/dousheng/cmd/api/rpc"
+	"github.com/Alexdzk/dousheng/kitex_gen/publish"
+	"github.com/Alexdzk/dousheng/pkg/errno"
 	"github.com/gin-gonic/gin"
 )
 

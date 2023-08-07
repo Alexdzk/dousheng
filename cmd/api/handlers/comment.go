@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"unicode/utf8"
 
-	"github.com/chenmengangzhi29/douyin/cmd/api/rpc"
-	"github.com/chenmengangzhi29/douyin/kitex_gen/comment"
-	"github.com/chenmengangzhi29/douyin/pkg/constants"
-	"github.com/chenmengangzhi29/douyin/pkg/errno"
+	"github.com/Alexdzk/dousheng/cmd/api/rpc"
+	"github.com/Alexdzk/dousheng/kitex_gen/comment"
+	"github.com/Alexdzk/dousheng/pkg/constants"
+	"github.com/Alexdzk/dousheng/pkg/errno"
 	"github.com/gin-gonic/gin"
 )
 
