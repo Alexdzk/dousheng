@@ -14,11 +14,22 @@ type FavoriteRaw struct {
 	VideoId int64 `gorm:"column:video_id;not null;index:idx_videoid"`
 }
 
+type VideoCounter struct {
+	gorm.Model
+	VideoId int64 `gorm:"column:video_id;not null;index:idx_videoid"`
+	Type    int   `gorm:"column:type;not null"` //1-点赞 4-评论
+	Count   int64 `gorm:"column:count;not null"`
+}
+
 func (FavoriteRaw) TableName() string {
 	return "favorite"
 }
 
-//根据当前用户id和视频id获取点赞信息
+func (VideoCounter) TableName() string {
+	return "video_count"
+}
+
+// 根据当前用户id和视频id获取点赞信息
 func QueryFavoriteByIds(ctx context.Context, currentId int64, videoIds []int64) (map[int64]*FavoriteRaw, error) {
 	var favorites []*FavoriteRaw
 	err := DB.WithContext(ctx).Where("user_id = ? AND video_id IN ?", currentId, videoIds).Find(&favorites).Error
@@ -36,7 +47,8 @@ func QueryFavoriteByIds(ctx context.Context, currentId int64, videoIds []int64) 
 // CreateFavorite add a record to the favorite table through a transaction, and add the number of video likes
 func CreateFavorite(ctx context.Context, favorite *FavoriteRaw, videoId int64) error {
 	DB.WithContext(ctx).Transaction(func(tx *gorm.DB) error {
-		err := tx.Table("video").Where("id = ?", videoId).Update("favorite_count", gorm.Expr("favorite_count + ?", 1)).Error
+		// err := tx.Table("video").Where("id = ?", videoId).Update("favorite_count", gorm.Expr("favorite_count + ?", 1)).Error
+		err := tx.Table("video_count").Where("video_id = ? AND type = ?", videoId, 1).Update("Count", gorm.Expr("count + ?", 1)).Error
 		if err != nil {
 			klog.Error("AddFavoriteCount error " + err.Error())
 			return err
@@ -53,7 +65,7 @@ func CreateFavorite(ctx context.Context, favorite *FavoriteRaw, videoId int64) e
 	return nil
 }
 
-//DeleteFavorite Delete a record in the favorite table and reduce the number of video likes
+// DeleteFavorite Delete a record in the favorite table and reduce the number of video likes
 func DeleteFavorite(ctx context.Context, currentId int64, videoId int64) error {
 	DB.WithContext(ctx).Transaction(func(tx *gorm.DB) error {
 		var favorite *FavoriteRaw

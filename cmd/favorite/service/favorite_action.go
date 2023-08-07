@@ -4,7 +4,9 @@ import (
 	"context"
 	"errors"
 
+	"github.com/Alexdzk/dousheng/dal/cache"
 	"github.com/Alexdzk/dousheng/dal/db"
+	"github.com/Alexdzk/dousheng/dal/mq"
 	"github.com/Alexdzk/dousheng/kitex_gen/favorite"
 	"github.com/Alexdzk/dousheng/pkg/constants"
 	"github.com/Alexdzk/dousheng/pkg/jwt"
@@ -44,8 +46,16 @@ func (s *FavoriteActionService) FavoriteAction(req *favorite.FavoriteActionReque
 			UserId:  currentId,
 			VideoId: req.VideoId,
 		}
-
-		err := db.CreateFavorite(s.ctx, favorite, req.VideoId)
+		if !cache.FavoriteCheck(favorite.UserId, favorite.VideoId) {
+			err := cache.VideoFavoriteAciton(favorite.UserId, favorite.VideoId, 1)
+			if err != nil {
+				return err
+			}
+			if err = mq.PublishFavoriteMsg(context.Background(), favorite); err != nil {
+				return err
+			}
+		}
+		// err := db.CreateFavorite(s.ctx, favorite, req.VideoId)
 		if err != nil {
 			return err
 		}
